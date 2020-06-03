@@ -1,0 +1,411 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html,body{
+    font-family: 微軟正黑體;
+    
+}
+
+
+/* 上排介紹區域 */
+
+.wrap{
+    width: 1025px;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+}
+
+.intro{
+    background: url(../images/img-headerShape.png) no-repeat;
+    padding: 120px;
+    display: flex;
+}
+
+.intro .self-imfo{
+    text-align: center;
+}
+
+.intro .self-imfo h1{
+    font-size: 42px;
+    margin-top: 11px;
+}
+
+.intro .self-imfo h5{
+    font-size: 14px;
+    color: #4A4A4A;
+    margin-top: 9px;
+    line-height: 1.8;
+}
+
+
+.intro .contact{
+    margin-left: 136px;
+    display: flex;
+}
+
+.intro .logo,.imfo{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro .imfo{
+    margin-left: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: 550;
+}
+
+/* 技能區域 */
+
+.skill h2{
+    text-align: center;
+    font-size: 24px;
+    color: #1736DC;
+    font-weight: 600;
+    padding: 48px;
+}
+
+.skill .skill-item{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.skill-item .items{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 284px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -2px 2px 3px	#DCDCDC;
+    transition-duration: 0.3s;
+}
+
+.skill-item .items1{
+    border-bottom: 6px solid #F58D23 ;
+}
+
+.skill-item .items2{
+    border-bottom: 6px solid #539E43 ;
+}
+
+.skill-item .items3{
+    border-bottom: 6px solid #6762A6;
+}
+
+.skill-item .items:hover{
+    box-shadow: -5px 5px 5px	#DCDCDC;
+
+}
+
+.skill-item .items img{
+    padding: 25px;
+}
+
+.skill-item .items h3{
+    font-size: 18px;
+    font-weight: 550;
+    color: #4A4A4A;
+    margin-bottom: 24px;
+}
+
+.skill-item .items ul{
+    align-self: flex-start;
+    margin-left: 60px;
+    margin-bottom: 25px;
+}
+
+.skill-item .items ul li{
+    font-size: 10px;
+    color: #4A4A4A;
+    padding: 0px 8px;
+    margin-top: 3px;
+}
+
+/* 工作經歷 */
+
+.experience h2{
+    text-align: center;
+    font-size: 24px;
+    color: #1736DC;
+    font-weight: 600;
+    padding: 48px;
+
+}
+
+.experience .experience-det{
+    display: flex;
+    justify-content: center;
+}
+
+.experience-det .middle,.right,.left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.experience-det .middle .line{
+    height: 513.6px;
+    width: 2px;
+    background-color: #D8D8D8;
+}
+
+.middle .dot-items{
+    position: absolute;
+    left: 4px;
+    top: 80px;
+}
+
+.dot-items img{
+    margin-bottom: 120px;
+}
+
+.experience-items{
+    border: 1px solid #FB56BF;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 12px;
+}
+
+.experience-items h5,h3,h4{
+    font-size: 12px;
+    color: #4A4A4A;
+    letter-spacing: 0.53px;
+    margin-bottom: 10px;
+}
+
+.experience-items h3{
+    color: #8A1737;
+    font-weight: 600;
+}
+
+.experience-items h4{
+    color: #4A4A4A;
+}
+
+.experience-items p{
+    font-size: 10px;
+    color: #9B9B9B;
+    letter-spacing: 0.44px;
+    line-height: 18px;
+}
+
+.experience-det .left .experience-items{
+    text-align: right;
+    margin-top: 40px;
+}
+
+.experience-det .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.experience-det .right .experience-items{
+    margin-top: 80px;
+    margin-bottom: 45px;
+
+}
+
+.experience-det .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+/* 作品區 */
+
+.work h2{
+    font-size: 24px;
+    color: #FB56BF;
+    text-align: center;
+    font-weight: 600;
+    padding: 48px;
+}
+
+.work .work-item{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.work .work-item .items{
+    width: 284px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: -2px 2px 3px	#DCDCDC;
+    transition-duration: 0.3s;
+}
+
+.work .work-item .items:hover{
+    box-shadow: -5px 5px 5px	#DCDCDC;
+}
+
+
+.work-item .items .work-logo{
+    width: 284px;
+    height: 150px;
+    text-align: center;
+
+}
+
+.work-item .items .work-logo img{
+    margin-top: 35px;
+}
+
+
+.work-item .items .work-logo1{
+    background-color: pink;
+    position: relative;
+}
+
+.work-item .items .work-logo2{
+    background-color: #424242;
+}
+
+.work-item .items .work-logo3{
+    background-color: #8AD7FA;
+}
+
+.work-item .items .work-logo1 img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.work-item .items h3{
+    font-size: 14px;
+    padding: 8px;
+    font-weight: 550;
+
+}
+
+.work-item .items p{
+    font-size: 14px;
+    color: #4A4A4A;
+    padding: 8px;
+}
+
+
+
+/* 自我介紹 */
+
+.about{
+    padding: 30px;
+}
+
+.about h2{
+    font-size: 24px;
+    color: #FB56BF;
+    text-align: center;
+    font-weight: 600;
+    padding: 48px;
+}
+
+.about .about-imfo{
+    display: flex;
+    padding: 0px 102px;
+
+}
+
+.about .about-imfo img{
+    width: 260px;
+    height: 335px;
+}
+
+.about .about-imfo .about-intro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 44px;
+}
+
+.about .about-imfo .about-intro p{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 26px;
+}
+
+/* 下排 */
+
+.footer{
+    background: url(../images/img-Looper-bg.png);
+    padding: 35px;
+    margin-top: 40px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 16px;
+
+}
+
+
+
+
+
+
